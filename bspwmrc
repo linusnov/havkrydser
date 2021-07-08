@@ -1,7 +1,7 @@
 #! /bin/sh
 
 sxhkd &
-bash ~/.config/polybar/launch.sh --cuts &
+bash ~/.config/polybar/launch.sh --forest &
 xset led on &
 exec nitrogen --restore &
 picom --config /home/novak/.config/compton/compton.conf &
