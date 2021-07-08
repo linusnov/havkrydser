@@ -14,7 +14,7 @@ alt + t
 
 # program launcher
 alt + d
-	$HOME/.config/polybar/cuts/scripts/launcher.sh
+	$HOME/.config/polybar/forest/scripts/launcher.sh
 
 alt + w
 	brave
@@ -32,7 +32,7 @@ alt + f
 	pcmanfm
 
 alt + m
-	signal-desktop
+	discord
 
 alt + r
 	tilix -name Ranger -e ranger
