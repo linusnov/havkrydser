@@ -36,10 +36,8 @@ exec bspwm
 - [x] polybar
 - [x] tilix
 
-<div align="center">
-  <p><a href="https://neorealisk.github.io/start">Neorealisk</a> repository 🔐 </p>
-</div>
+
 
 ---
 
-> coded by [@Denianova](https://t.me/DemianovaSh)
+> coded by [@Denianova](https://t.me/Andreanskiy)
