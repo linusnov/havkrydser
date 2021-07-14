@@ -14,10 +14,13 @@ alt + t
 
 # program launcher
 alt + d
-	$HOME/.config/polybar/forest/scripts/launcher.sh
+	$HOME/.config/polybar/colorblocks/scripts/launcher.sh
 
 alt + w
 	brave
+
+alt + o
+	opera
 
 alt + s
 	xset led off
@@ -36,6 +39,9 @@ alt + m
 
 alt + r
 	tilix -name Ranger -e ranger
+
+super + alt + s
+	~/.config/polybar/colorblocks/scripts/powermenu.sh
 
 # alt + c
 # 	rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
