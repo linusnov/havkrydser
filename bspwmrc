@@ -1,10 +1,10 @@
 #! /bin/sh
 
 sxhkd &
-bash ~/.config/polybar/launch.sh --forest &
+bash ~/.config/polybar/launch.sh &
 xset led on &
 exec nitrogen --restore &
-picom --config /home/novak/.config/compton/compton.conf &
+picom --experimental-backends &
 setxkbmap -layout es &
 
 #feh --bg-fill /home/paola/Imágenes/taylor.jpg
@@ -99,4 +99,5 @@ bspc subscribe node_manage | while read -a msg ; do
 	[ "$FLOATING_DESKTOP_ID" = "$desk_id" ] && bspc node "$wid" -t floating
 done
 
-
+bspc config border_width 1
+xsetroot -cursor_name left_ptr &
