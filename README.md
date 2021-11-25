@@ -1,4 +1,4 @@
-### Coded by [@Demianova](https://t.me/DemianovaSh)
+### Coded by [@Strekozov](mailto:strekozov@pm.me)
 
 <div align="center">
   <h1> BSPWM </h1>
@@ -40,4 +40,4 @@ exec bspwm
 
 ---
 
-> coded by [@Denianova](https://t.me/Andreanskiy)
+> coded by [@Strekozov](mailto:strekozov@pm.me)
