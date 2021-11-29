@@ -46,7 +46,10 @@ if [ "$(id -u)" == "0" ]; then
 	read -p "[dotfiles@console]>> " ch
 
 	if [ $ch = i ]; then
-		echo ""
+		mkdir $HOME/.config/bspwm; mkdir $HOME/.config/sxhkd; mkdir $HOME/.config/picom;
+		cp -r bspwmrc $HOME/.config/bspwm; cp -r sxhkdrc $HOME/.config/sxhkd; cp -r picom.conf $HOME/.config/picom;
+
+		clear; toilet -f smascii12 Done | lolcat -a
 	elif [ $ch = u ]; then
 		echo ""
 	else
