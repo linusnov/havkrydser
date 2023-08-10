@@ -9,20 +9,23 @@
 
 # Install
 
-```
+```sh
 # In your terminal
 
-$ git clone https://github.com/Noerealisk/nkcdrc.git
+╭─mac at mac’s iMac in ~/Desktop
+╰─ փ >> gh repo clone strekozov/dotfiles
+```
 
-$ cd nkcdrc && cd dotfiles
+## Edit your xinitrc
 
+```sh
 # Edit the document ".xinitc" with
 
 sxhkdrc &
 exec bspwm
 ```
 
-# Config
+# Dependencies
 
 - [x] sxhkd
 - [x] bspwm
@@ -39,4 +42,4 @@ exec bspwm
 
 ---
 
-> coded by [@Strekozov](mailto:strekozov@pm.me)
+> coded by [@Strekozov](mailto:linusnov@pm.me)
