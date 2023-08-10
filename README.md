@@ -5,7 +5,6 @@
 </div>
 <p align="center">Configuration</p>
 <div align="center">
-  <img src="https://img.shields.io/github/followers/sundowndev?color=pink&label=Demianova&logo=telegram&style=for-the-badge" />
 </div>
 
 # Install
