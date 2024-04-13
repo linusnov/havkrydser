@@ -35,6 +35,8 @@ exec bspwm
 - [x] lxappearance
 - [x] polybar
 - [x] tilix
+- [x] lolcat
+- [x] toilet
 
 
 
