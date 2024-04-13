@@ -1,7 +1,5 @@
-### Coded by [@Strekozov](mailto:strekozov@pm.me)
-
 <div align="center">
-  <h1> BSPWM </h1>
+  <h1> Dotfiles Conf </h1>
 </div>
 <p align="center">Configuration</p>
 <div align="center">
