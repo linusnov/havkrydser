@@ -22,7 +22,7 @@ function ctrl_c(){
 
 function dependencies(){
 	tput civis
-	dependencies=(bspwm sxhkd picom lxappearance pcmanfm nitrogen opera toilet)
+	dependencies=(bspwm sxhkd picom lxappearance pcmanfm nitrogen opera toilet lolcat)
 
 	echo -e "${blue}[${end}${red}!${end}${blue}]${end}${yellow} Checking dependencies${end}"
 	sleep 2
@@ -40,22 +40,45 @@ function dependencies(){
 	done
 }
 
-if [ "$(id -u)" == "0" ]; then
+function polybar_script(){
+	tput civis
+	dependencies=(polybar)
+	
+	echo -e  "${blue}[${end}${red}!${end}${blue}]${end}${yellow} Checking Polybar test${end}"
+	sleep 2
+
+	for program in "${dependencies[@]}"; do
+		echo -ne "\t${yellow}dependencies $program${end}"
+	        test -f /sbin/$program
+
+		if [ "$(echo $?)" == "0" ]; then
+			echo -e "${green}(+)${end}"
+		else
+			echo -e "${red}(x)${end}"
+			yay -S $program --noconfirm
+		fi; sleep 	
+
+	done
+}
+
+if [ "$(id -u)" == "1000" ]; then
+	dependencies; clear
 	toilet -f pagga dotfiles | lolcat -a
-	echo -e "install configuration >> i"
+	echo -e "1) install configuration"
+	echo -e "2) install polybar"
 	read -p "[dotfiles@console]>> " ch
 
 	if [ $ch = i ]; then
-		mkdir $HOME/.config/bspwm; mkdir $HOME/.config/sxhkd; mkdir $HOME/.config/picom;
-		cp -r bspwmrc $HOME/.config/bspwm; cp -r sxhkdrc $HOME/.config/sxhkd; cp -r picom.conf $HOME/.config/picom;
+		mkdir $HOME/.config/bspwm; mkdir $HOME/.config/sxhkd;
+		cp -r configs/bspwmrc $HOME/.config/bspwm; cp -r configs/sxhkdrc $HOME/.config/sxhkd;
 
 		clear; toilet -f smascii12 Done | lolcat -a
-	elif [ $ch = u ]; then
-		echo ""
+	elif [ $ch = 2 ]; then
+		polybar_script
 	else
 		echo ""
 	fi
 
 else
-	echo -e "\n\t${red}You need root user${end}\n\t"
+	echo -e "\n\t${red}You need normal user${end}\n\t"
 fi
