@@ -61,6 +61,26 @@ function polybar_script(){
 	done
 }
 
+function lazyvim(){
+  tput civis
+  dependencies=(neovim)
+
+  echo -e "${green}(!) Searching dependencies ${end}"
+  sleep 2
+
+  for program in "${dependencies[@]}"; do 
+      echo -ne "\t opening in sbin... ${red}$program${end}"
+        test -f /sbin/$program;
+    if [ "$(echo $?)" == "0" ]; then
+      echo -e "${green}Installed${end}"
+    else
+      echo -e "${red}Non-installed${end}"
+      sudo pacman -S $program;
+    fi
+  done 
+
+}
+
 if [ "$(id -u)" == "1000" ]; then
 	dependencies; clear
 	toilet -f pagga dotfiles | lolcat -a
@@ -75,6 +95,10 @@ if [ "$(id -u)" == "1000" ]; then
 		clear; toilet -f smascii12 Done | lolcat -a
 	elif [ $ch = 2 ]; then
 		polybar_script
+    git clone --depth=1 https://github.com/adi1090x/polybar-themes.git;
+    cd polybar-themes; ./setup.sh;
+  elif [ $ch = 3 ]; then
+    lazyvim
 	else
 		echo ""
 	fi
