@@ -1,11 +1,11 @@
 #! /bin/sh
 
 sxhkd &
-bash ~/.config/polybar/launch.sh &
-xset led on &
+bash ~/.config/polybar/launch.sh --panels &
 exec nitrogen --restore &
-picom --experimental-backends &
+picom &
 setxkbmap -layout es &
+xinput set-prop 10 "libinput Tapping Enabled" 1
 
 #feh --bg-fill /home/paola/Imágenes/taylor.jpg
 bspc config pointer_modifier mod1
