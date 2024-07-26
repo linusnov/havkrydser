@@ -1,32 +1,28 @@
-#
-# Zatiel Independent Hotkeys
-#
-
 # terminal emulator
 alt + Return
 	sh -c "$HOME/.bin/draw"
 
 super + Return
-	 tilix
+         tilix
 
 alt + t
-	$HOME/.config/bspwm/bspwmfloat tilix -name Float
+        $HOME/.config/bspwm/bspwmfloat tilix -name Float
 
 # program launcher
 alt + d
-	$HOME/.config/polybar/colorblocks/scripts/launcher.sh
+        $HOME/.config/rofi/launchers/type-7/launcher.sh
 
 alt + w
-	brave
+        firefox
 
 alt + o
-	opera
+        obsidian
 
 alt + s
-	xset led off
+        session
 
 alt + x
-	xset led on
+        reboot
 
 alt + k
 	xrandr --output HDMI1 --auto --right-of eDP1
