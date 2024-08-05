@@ -22,7 +22,7 @@ function ctrl_c(){
 
 function dependencies(){
 	tput civis
-	dependencies=(bspwm sxhkd picom lxappearance pcmanfm nitrogen opera toilet lolcat)
+	dependencies=(bspwm sxhkd xorg picom lxappearance pcmanfm nitrogen firefox toilet lolcat)
 
 	echo -e "${blue}[${end}${red}!${end}${blue}]${end}${yellow} Checking dependencies${end}"
 	sleep 2
