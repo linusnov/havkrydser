@@ -37,6 +37,7 @@ exec bspwm
 - [x] tilix
 - [x] lolcat
 - [x] toilet
+  [x] nm-connection-editor
 
 
 
