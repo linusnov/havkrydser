@@ -37,7 +37,8 @@ exec bspwm
 - [x] tilix
 - [x] lolcat
 - [x] toilet
-  [x] nm-connection-editor
+- [x] nm-connection-editor
+- [x] system-config-printer
 
 
 
