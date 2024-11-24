@@ -39,9 +39,3 @@ exec bspwm
 - [x] toilet
 - [x] nm-connection-editor
 - [x] system-config-printer
-
-
-
----
-
-> coded by [@Strekozov](mailto:linusnov@pm.me)
