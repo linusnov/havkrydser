@@ -11,7 +11,7 @@
 # In your terminal
 
 ╭─mac at mac’s iMac in ~/Desktop
-╰─ փ >> gh repo clone strekozov/dotfiles
+╰─ փ >> gh repo clone linusnov/havkrydser
 ```
 
 ## Edit your xinitrc
