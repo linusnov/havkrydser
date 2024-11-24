@@ -38,4 +38,21 @@ exec bspwm
 - [x] lolcat
 - [x] toilet
 - [x] nm-connection-editor
+
+### For printers
+
+```
+sudo pacman -S cups cups-pdf system-config-printer gutenprint
+
+sudo systemctl start cups
+
+sudo systemctl enable cups
+
+# Localhost
+http://localhost:631
+
+```
+
+
 - [x] system-config-printer
+- [x] simple-scan
