@@ -13,28 +13,28 @@ alt + d
         $HOME/.config/rofi/launchers/type-7/launcher.sh
 
 alt + w
-        firefox
+        brave
 
 alt + o
         obsidian
 
 alt + s
-        session
+        nemo
 
 alt + x
-        reboot
+        shutdown -h now
 
 alt + k
-	xrandr --output HDMI1 --auto --right-of eDP1
+	setxkbmap -layout ru -variant phonetic
 
 alt + f
-	pcmanfm
+	xset -dpms && xset s off
 
 alt + m
-	discord
+	setxkbmap -layout es
 
 alt + r
-	tilix -name Ranger -e ranger
+	i3lock -i ~/.config/.i3lock/i3lock.png
 
 super + alt + s
 	~/.config/polybar/colorblocks/scripts/powermenu.sh
