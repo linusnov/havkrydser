@@ -217,3 +217,12 @@ super + alt + shift + {h,j,k,l}
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+# redshift filter
+
+super + n
+    redshift -O 3700 # Adjust to warmer tones
+
+super + d
+    redshift -x # Reset to default
+

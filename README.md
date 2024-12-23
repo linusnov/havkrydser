@@ -38,6 +38,7 @@ exec bspwm
 - [x] lolcat
 - [x] toilet
 - [x] nm-connection-editor
+- [x] redshift
 
 ### For printers
 
