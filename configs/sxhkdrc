@@ -10,7 +10,7 @@ alt + t
 
 # program launcher
 alt + d
-        $HOME/.config/rofi/launchers/type-7/launcher.sh
+        $HOME/.config/rofi/launchers/type-4/launcher.sh
 
 alt + w
         brave
